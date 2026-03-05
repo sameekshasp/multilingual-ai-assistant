@@ -1,3 +1,15 @@
+---
+title: Multilingual AI Assistant
+emoji: 🌍
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: app.py
+pinned: false
+---
+
+
 # multilingual-ai-assistant-powered -by-huggingface-models
 A multilingual AI assistant that performs **language detection**, **translation**, **sentiment analysis**, and **AI-powered chat** ,all using state-of-the-art Hugging Face Transformer models.
 
