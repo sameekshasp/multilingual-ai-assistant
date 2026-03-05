@@ -1,0 +1,55 @@
+# =============================================================================
+# Multilingual AI Assistant — .gitignore
+# =============================================================================
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ─────────────────────────────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+
+# ── Hugging Face model cache (NEVER push — up to 10 GB) ─────────────────────
+.cache/
+~/.cache/huggingface/
+*.bin
+*.safetensors
+*.ot
+*.onnx
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+*.pem
+*.key
+
+# ── IDE / Editor files ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
+
+# ── Streamlit ────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Pytest / Test artifacts ──────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/

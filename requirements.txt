@@ -1,0 +1,48 @@
+# =============================================================================
+# Multilingual AI Assistant — Python Dependencies
+# =============================================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# Notes:
+#   - torch: PyTorch (CPU version). For GPU support, see https://pytorch.org/get-started
+#   - sentencepiece: Required by the NLLB translation model
+#   - sacremoses: Required by some tokenizers
+# =============================================================================
+
+# --- Web Framework ---
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# --- Data validation ---
+pydantic>=2.0.0
+
+# --- HTTP client (for Streamlit frontend) ---
+requests>=2.31.0
+
+# --- Machine Learning ---
+# PyTorch (CPU). For GPU: https://pytorch.org/get-started/locally/
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Hugging Face Ecosystem ---
+transformers>=4.35.0
+tokenizers>=0.15.0
+datasets>=2.14.0
+huggingface-hub>=0.19.0
+accelerate>=0.24.0
+
+# --- Tokenizer dependencies ---
+sentencepiece>=0.1.99
+sacremoses>=0.0.53
+protobuf>=3.20.0
+
+# --- Frontend ---
+streamlit>=1.28.0
+
+# --- Utilities ---
+numpy>=1.24.0
+scipy>=1.11.0
+
+# --- Fast language detection (replaces XLM-RoBERTa for detection — 5KB vs 1.1GB) ---
+langdetect>=1.0.9
